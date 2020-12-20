@@ -1,0 +1,35 @@
+{
+  "name": "mean_course",
+  "version": "1.0.0",
+  "description": "fullstack app with angular and node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "serve": "npx nodemon",
+    "client-install": "npm install --prefix client",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run serve\" \"npm run client\""
+  },
+  "keywords": [
+    "js",
+    "node",
+    "angular"
+  ],
+  "author": "Dima Zahatin",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.10.19",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
